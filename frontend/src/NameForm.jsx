@@ -17,7 +17,7 @@ function NameForm() {
         }
 
         try {
-            const response = await axios.post('http://localhost:8080/api/name', { name });
+            const response = await axios.post('https://springtest-backend.onrender.com/api/name', { name });
             setMessage(`Successfully saved: ${response.data.name}`);
             setName('');
         } catch (err) {
